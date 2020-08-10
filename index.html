@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dice Game</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="dicegame2.css">
+</head>
+<body>
+<div class="container"><br><br><br>
+	<div class="field">
+<h1 id="header" align="center"></h1><br>
+<div id="targetscore" align="center">Paying upto Score  <span id="deciscore">0</span></div>
+<table align="center">
+	<tr>
+		<td class="square"><div id="playsq1"><span id="title1">Player 1</span><br><span class="scorekeeper" id="player1">0</span></div></td>
+		<td class="square2"><img src="dice-0.jpg" id="dice1">&nbsp<img src="dice-0.jpg" id="dice2"></td>
+		<td class="square"><div id="playsq2"><span id="title2">Player 2</span><br><span class="scorekeeper" id="player2">0</span></div></td>
+	</tr>
+</table>
+<table align="center">
+	<tr>
+		<td class="botable"></td>
+		<td class="botable"><div class="scorekeeper2">This Turn<br><span class="scorekeeper" id="p1round">0</span></div></td>
+		<td class="botable2"></td>
+		<td class="botable2"></td>
+		<td class="botable"><div class="scorekeeper2">This Turn<br><span class="scorekeeper" id="p2round">0</span></div></td>
+		<td class="botable"></td>
+	</tr>
+</table>
+<div align="center">
+<br><br>
+<input type="value" name="finalscore"  placeholder="Final Score" id="endcond"><br><br><button class="btn btn-info btn-lg" id="setgame">Reset Game</button><br><br>
+<button id="roller" type="button" class="btn btn-outline-danger btn-lg">Roll Dice</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<button id="holder" type="button" class="btn btn-outline-success btn-lg">Hold</button><br><br>
+</div>
+<div align="center"><a href="https://www.youtube.com/watch?v=gMFMpC3mC_0">How To Play</a></div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script type="text/javascript" src="dicegame2.js"></script>
+</body>
+</html>
